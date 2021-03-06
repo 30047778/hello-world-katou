@@ -22,3 +22,5 @@ jobs:
         java-version: '11.0.6'
     - name: Build and Test with Maven
       run: mvn clean install
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1
